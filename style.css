@@ -103,11 +103,26 @@ body {
     margin-bottom: 35px;
     color: #9ca3af;
 }
+/* MOBILE NAV DEFAULT (HIDDEN) */
 .navigate {
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease;
+    z-index: 999;
 }
+/* SHOW MENU */
+.navigate.active {
+    right: 0;
+}
+
 .scroll-text {
     margin: 15px 0 35px;
     height: 28px;
@@ -228,12 +243,88 @@ body {
     gap: 25px;
     margin-top: 40px;
 }
+.portfolio-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: #38bdf8;
+    box-shadow: 0 15px 35px rgba(56,189,248,0.25);
+}
+
 .portfolio-card{
     padding: 30px;
     border:1px solid #1e293b;
     border-radius: 10px;
     background: #020617;
 }
+.portfolio-card h3 {
+    transition: color 0.3s ease;
+}
+
+.portfolio-card:hover h3 {
+    color: #38bdf8;
+}
+.portfolio-title {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #e5e7eb;
+    text-align: left;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.portfolio-card {
+    background: #020617;
+    border: 1px solid #1e293b;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-6px);
+    border-color: #38bdf8;
+}
+
+.portfolio-card p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #9ca3af;
+}
+.portfolio-title {
+    margin-top: 50px;
+    color: #38bdf8;
+    font-size: 22px;
+}
+
+.portfolio-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.portfolio-buttons a {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #38bdf8, #7c3aed);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-buttons a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(56,189,248,0.4);
+}
+
+
 .contact-form{
     max-width: 500px;
     margin: 04px auto;
@@ -272,7 +363,9 @@ body {
    RESPONSIVE DESIGN
 ========================= */
 
-/* Tablets */
+/* =========================
+   TABLETS
+========================= */
 @media (max-width: 900px) {
     .header {
         padding: 22px 40px;
@@ -285,22 +378,68 @@ body {
     }
 }
 
-/* Mobile Phones */
+/* =========================
+   MOBILE PHONES
+========================= */
 @media (max-width: 768px) {
-    .menu-toggle{
-        display: block;
-    }
-    .navigate {
-        display: none;
-        flex-direction: column;
-        background: #020617;
-        width: 100%;
-        margin-top: 15%;
-    }
-    .navigate:active{
+
+    /* Show hamburger */
+    .hamburger {
         display: flex;
     }
+
+    /* Mobile navigation menu */
+    .navigate {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: #020617;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        transition: right 0.3s ease;
+        z-index: 999;
+    }
+
+    /* When menu is active */
+    .navigate.active {
+        right: 0;
+    }
+
+    /* Hero spacing */
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    /* Sections */
+    .section {
+        padding: 70px 20px;
+    }
+
+    /* Services & Why-me layout */
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* CENTER THE 3RD CARD (Cyber Security / Security-Focused) */
+    .service-box:last-child {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 420px;
+    }
 }
+
 .hero {
     padding: 80px 20px;
     }
@@ -321,7 +460,7 @@ body {
     margin: 20px auto;
     padding: 22px;
     }
-}
+
 .about-tags {
     margin-top: 10px;
     color: #38bdf8;
@@ -362,3 +501,27 @@ body {
 .portfolio-card:hover img {
     transform: scale(1.05);
 }
+/*Hamburger icon */
+.hamburger{
+display: flex;
+flex-direction: column;
+cursor: pointer;
+gap: 5px;
+z-index: 1000;
+}
+.hamburger span{
+    width: 25px;
+    height: 3px;
+    background: #38bdf8;
+    transition: all 0.4s ease;
+}
+/*Hambuger Animation */
+.hamburger.active span:nth-child(1) {
+    transform:rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active span:nth-child(3){
+    transform: rotate(-45deg) translate(6px, -6px);
+} 
