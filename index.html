@@ -3,208 +3,412 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>BigSam | Graphic Designer & IT Expert</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- JS -->
-    <script src="main.js" defer></script>
+    <title>BigSam | Creative Tech Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
     <!-- HEADER -->
-<header class="header">
-    <div class="logo">
-        <img src="logo.png" alt="BigSam Logo">
-    </div>
-
-    <!-- HAMBURGER -->
- <div class="hamburger" id="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
- </div>
-    <nav class="navigate" id="nav-menu">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-
-   <!-- HERO SECTION -->
-<section class="hero fade-in" id="home">
-    <h1>Design. Technology. Security.</h1>
-
-    <div class="scroll-text">
-        <span>Cyber Security</span>
-        <span>Graphics Design</span>
-        <span>Web Development</span>
-        <span>IT Support</span>
-    </div>
-
-    <p class="about-tags">
-        Graphic Design • Web Development • Cybersecurity
-    </p>
-</section>
-
-<!-- ABOUT SECTION -->
-<section class="about section fade-in" id="about">
-    <h2>About Me</h2>
-    <p>
-        I’m BigSam — a Graphic Designer, Website Developer, and Cybersecurity
-        enthusiast focused on clean visuals, functional systems,
-        and secure digital solutions.
-    </p>
-</section>
-<!-- SERVICES SECTION -->
-<section class="section service fade-in" id="services">
-    <h2>My Services</h2>
-
-    <div class="service-grid">
-        <div class="service-box">
-            <h3>🎨 Graphic Design</h3>
-            <p>
-                I create professional visual designs that help brands stand out,
-                attract attention, and communicate clearly.
-            </p>
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="BigSam Logo">
+            <span>BigSam</span>
         </div>
 
-        <div class="service-box">
-            <h3>💻 Web Development</h3>
-            <p>
-                I build clean, responsive, and user-friendly websites optimized
-                for performance and usability.
-            </p>
+        <!-- HAMBURGER -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
+        
+        <nav class="navigate" id="nav-menu">
+            <a href="#home"><i class="fas fa-home"></i> Home</a>
+            <a href="#about"><i class="fas fa-user"></i> About</a>
+            <a href="#services"><i class="fas fa-cogs"></i> Services</a>
+            <a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a>
+            <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+    </header>
 
-        <div class="service-box">
-            <h3>🛡️ Cyber Security</h3>
-            <p>
-                I help individuals and small businesses improve system security,
-                reduce risks, and understand basic cyber threats.
-            </p>
-        </div>
-    </div>
-</section>
-<!-- PORTFOLIO SECTION -->
-<section class="section fade-in" id="portfolio">
-    <h2>Portfolio</h2>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>
+                    <span class="hero-line">Design.</span>
+                    <span class="hero-line">Technology.</span>
+                    <span class="hero-line">Security.</span>
+                </h1>
+                
+                <div class="hero-subtitle">
+                    <h2>
+                        <span class="static-text">I'm <strong>BigSam</strong></span>
+                        <span class="rotating-text">
+                            <span class="text-item">Graphic Designer</span>
+                            <span class="text-item">Web Developer</span>
+                            <span class="text-item">IT Security Expert</span>
+                        </span>
+                    </h2>
+                </div>
 
-    <!-- GRAPHIC DESIGN -->
-    <h3 class="portfolio-title">🎨 Graphic Design</h3>
-    <div class="portfolio-grid">
-        <div class="portfolio-card">
-            <p>
-                Selected design works including logos, flyers,
-                social media creatives, and brand visuals.
-            </p>
-            <div class="portfolio-buttons">
-                <a href="https://instagram.com/YOUR_INSTAGRAM" target="_blank">
-                    View Designs
-                </a>
+                <p class="hero-description">
+                    Creative technologist specializing in visual design, 
+                    web development, and cybersecurity solutions.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="primary-button">
+                        <i class="fas fa-eye"></i> View My Work
+                    </a>
+                    <a href="#contact" class="secondary-button">
+                        <i class="fas fa-paper-plane"></i> Get In Touch
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- WEB DEVELOPMENT -->
-    <h3 class="portfolio-title">💻 Web Development</h3>
-    <div class="portfolio-grid">
-        <div class="portfolio-card">
-            <p>
-                Website projects built for personal brands,
-                small businesses, and online presence.
-            </p>
-            <div class="portfolio-buttons">
-                <a href="https://github.com/psalmskiddy" target="_blank">
-                    View Projects
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- IT & CYBER SECURITY -->
-    <h3 class="portfolio-title">🛡️ IT & Cyber Security</h3>
-    <div class="portfolio-grid">
-        <div class="portfolio-card">
-            <p>
-                Practical IT support work, system setups,
-                troubleshooting, and basic security tasks.
-            </p>
-            <div class="portfolio-buttons">
-                <a href="https://facebook.com/YOUR_FACEBOOK" target="_blank">
-                    Learn More
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-</section>
-<section class="section fade-in" id="why-me">
-    <h2>Why Choose BigSam</h2>
-    <p>
-        I combine creative design, modern web technologies, and cybersecurity
-        awareness to help businesses stand out and stay secure.
-    </p>
-
-    <div class="service-grid">
-        <div class="service-box">
-            <h3>🎯 Multi-Skill Advantage</h3>
-            <p>Design, development, and IT security under one brand.</p>
-        </div>
-
-        <div class="service-box">
-            <h3>⚡ Reliable & Efficient</h3>
-            <p>Focused on clean delivery, deadlines, and functional solutions.</p>
-        </div>
-
-        <div class="service-box">
-            <h3>🔐 Security-Focused</h3>
-            <p>Every solution is built with basic security awareness in mind.</p>
-        </div>
-    </div>
-</section>
-
-
-<!-- CONTACT -->
-<section class="section fade-in" id="contact">
-    <h2>Contact Me</h2>
-    <p>Have a project or need a design? Send me a message.</p>
-
-    <form action="https://formsubmit.co/amewobisamuel05@gmail.com" method="POST" class="contact-form">
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="email" placeholder="Your email" required>
-        <textarea name="message" placeholder="Your message" required></textarea>
-
-        <input type="hidden" name="_subject" value="New Message from BigSam Website">
-        <input type="hidden" name="_captcha" value="false">
-
-        <button type="submit">Send Message</button>
-    </form>
-
-    <!-- WHATSAPP CONTACT -->
-    <div class="whatsapp-contact">
-        <p>Or contact me instantly:</p>
-        <a href="https://wa.me/234702167178" target="_blank">
-            Chat on WhatsApp
+        <a href="#about" class="scroll-down">
+            <div class="scroll-animation"></div>
+            <span>Scroll to explore</span>
         </a>
-    </div>
-</section>
+    </section>
 
+    <!-- ABOUT SECTION -->
+    <section class="about section fade-in" id="about">
+        <div class="section-header">
+            <span class="section-subtitle">Get to know me</span>
+            <h2 class="section-title">About Me</h2>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    I'm <strong>BigSam</strong> — a passionate creative technologist with expertise in 
+                    graphic design, web development, and cybersecurity. I bridge the gap 
+                    between aesthetics, functionality, and security.
+                </p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat">
+                        <h3>3+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-skills">
+                <h3>My Skills</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Graphic Design</span>
+                    <span class="skill-tag">Web Development</span>
+                    <span class="skill-tag">UI/UX</span>
+                    <span class="skill-tag">Cybersecurity</span>
+                    <span class="skill-tag">IT Support</span>
+                    <span class="skill-tag">Brand Identity</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services section fade-in" id="services">
+        <div class="section-header">
+            <span class="section-subtitle">What I offer</span>
+            <h2 class="section-title">My Services</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3>Graphic Design</h3>
+                <p>Professional branding, logos, marketing materials, and visual identities that make your brand stand out.</p>
+                <ul class="service-features">
+                    <li>Logo & Brand Identity</li>
+                    <li>Print & Digital Design</li>
+                    <li>Social Media Graphics</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Modern, responsive websites and web applications built with clean code and best practices.</p>
+                <ul class="service-features">
+                    <li>Responsive Design</li>
+                    <li>Performance Optimization</li>
+                    <li>SEO Friendly</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Cybersecurity</h3>
+                <p>Protect your digital assets with security assessments, vulnerability testing, and security awareness.</p>
+                <ul class="service-features">
+                    <li>Security Audits</li>
+                    <li>Risk Assessment</li>
+                    <li>Security Training</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION - BUTTONS REMOVED -->
+    <section class="portfolio section fade-in" id="portfolio">
+        <div class="section-header">
+            <span class="section-subtitle">Real Projects, Real Results</span>
+            <h2 class="section-title">My Portfolio</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="portfolio-intro">
+            <p>Here are some of my recent projects across different areas of expertise.</p>
+        </div>
+
+        <!-- GRAPHIC DESIGN PROJECTS -->
+        <div class="portfolio-category">
+            <h3 class="category-title">
+                <i class="fas fa-palette"></i> Graphic Design Projects
+            </h3>
+            <p class="category-description">
+                Logos, brand identities, marketing materials, and social media graphics I've created.
+            </p>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-card design-card">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Logo Design Project">
+                        <div class="portfolio-overlay">
+                            <span class="project-tag">Logo Design</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Brand Identity Package</h4>
+                        <p>Complete branding for a tech startup including logo, color palette, and business cards.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card design-card">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Social Media Graphics">
+                        <div class="portfolio-overlay">
+                            <span class="project-tag">Social Media</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Social Media Campaign</h4>
+                        <p>Complete social media graphics package for a 30-day marketing campaign.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card design-card">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1588614959060-4d144f28b207?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Flyer Design">
+                        <div class="portfolio-overlay">
+                            <span class="project-tag">Print Design</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Event Flyers & Posters</h4>
+                        <p>Professional event promotion materials for conferences and workshops.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- WEB DEVELOPMENT PROJECTS -->
+        <div class="portfolio-category">
+            <h3 class="category-title">
+                <i class="fas fa-code"></i> Web Development Projects
+            </h3>
+            <p class="category-description">
+                Websites and web applications I've built for clients and personal projects.
+            </p>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-card web-card">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Business Website">
+                        <div class="portfolio-overlay">
+                            <span class="project-tag">Business Website</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Small Business Website</h4>
+                        <p>Responsive website for a local business with contact form and service pages.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card web-card">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Portfolio Website">
+                        <div class="portfolio-overlay">
+                            <span class="project-tag">Portfolio Site</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Personal Portfolio Website</h4>
+                        <p>Custom-built portfolio site for a photographer with image gallery.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card web-card">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Dashboard Design">
+                        <div class="portfolio-overlay">
+                            <span class="project-tag">Web App</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Admin Dashboard UI</h4>
+                        <p>Custom admin interface with analytics, user management, and reporting.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- IT & SECURITY PROJECTS -->
+        <div class="portfolio-category">
+            <h3 class="category-title">
+                <i class="fas fa-shield-alt"></i> IT & Security Projects
+            </h3>
+            <p class="category-description">
+                Practical IT solutions, system setups, and security implementations.
+            </p>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-card security-card">
+                    <div class="portfolio-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Security Vulnerability Assessment</h4>
+                        <p>Comprehensive analysis of network security, identifying vulnerabilities and providing remediation steps for small business infrastructure.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card security-card">
+                    <div class="portfolio-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Small Office Network Setup</h4>
+                        <p>Complete network infrastructure setup for a 10-person office including firewall configuration, Wi-Fi setup, and device security.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card security-card">
+                    <div class="portfolio-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Security Awareness Training</h4>
+                        <p>Developed and delivered basic cybersecurity training for non-technical staff covering phishing, password security, and data protection.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PORTFOLIO CTA - REMOVED SOCIAL LINKS -->
+        <div class="portfolio-cta">
+            <h3>Interested in working together?</h3>
+            <p>Have a project in mind? Let's discuss how I can help bring your ideas to life.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact section fade-in" id="contact">
+        <div class="section-header">
+            <span class="section-subtitle">Let's work together</span>
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>amewobisamuel05@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <p>+234 702 167 178</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Available Worldwide</p>
+                    </div>
+                </div>
+            </div>
+
+            <form action="https://formsubmit.co/amewobisamuel05@gmail.com" method="POST" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <input type="hidden" name="_subject" value="New Message from BigSam Website">
+                <input type="hidden" name="_captcha" value="false">
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
+    </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <p>© 2025 BigSam. All Rights Reserved.</p>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="BigSam Logo">
+                <h3>BigSam</h3>
+                <p>Creative Technologist</p>
+            </div>
+            
+            <div class="footer-social">
+                <a href="https://instagram.com/bigsamhub" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 BigSam. All rights reserved.</p>
+                <p>Designed & Developed with <i class="fas fa-heart"></i> by BigSam</p>
+            </div>
+        </div>
     </footer>
 
-    <!-- JS -->
     <script src="js/main.js"></script>
-
 </body>
 </html>
